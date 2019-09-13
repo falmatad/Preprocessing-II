@@ -10,11 +10,23 @@
     max-width: 800px;
     width: 100%;
     margin: 0 auto;
+
+    @media @phone {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+
+    }
     nav {
         display: flex;
         justify-content: space-around;
         align-items: center;
         width: 35vw;
+
+        @media @phone {
+            width: 80vw;
+            padding-top:2%;
+        }
 
         a {
             text-decoration: none;
