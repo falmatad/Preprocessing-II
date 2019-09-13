@@ -1,1 +1,19 @@
 // Mixins in here
+.custom-btn(@bgcolor:@eastern-blue, @width:210px, @btFont:@white){
+    display: flex;
+    justify-content: center;
+    background-color: @bgcolor;
+    margin: 0 0px 20px;
+    cursor: pointer;
+    width: @width;
+    height: 45px;
+    font-size: 2rem;
+    border-radius: 10px;
+    color: @btFont;
+    padding-top: 5%;
+    
+    &:hover {
+      background-color:@btFont;
+      color:@bgcolor;
+    }
+}
